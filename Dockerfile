@@ -28,7 +28,9 @@ RUN cd ~ \
  && make clean \
  && make
  
-RUN echo "100 0f" > /root/lmic_pi/examples/grab-and-send/measurement.txt
+RUN cd ~ \
+&& git clone https://github.com/KathiWagner/hs-ulm-testsensor.git
 
 CMD (cd /root/lmic_pi/examples/grab-and-send && nohup ./grab-and-send 2>&1 > grab-and-send.log) & \
+(cd /root/https://github.com/KathiWagner/hs-ulm-testsensor.git && nohup ./grab-and-send 2>&1 > grab-and-send.log) & \
 /bin/bash
