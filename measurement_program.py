@@ -4,7 +4,7 @@ import random
 #import matplotlib.pyplot as plt
 
 
-data = open('/root/lmic_pi/grab-and-send/measurement.txt', "w")
+data = open('/root/lmic_pi/examples/grab-and-send/measurement.txt', "w")
 people = []
 people_hex =[]
 time_sec= [0,60,120,180,240, 300, 360]#range(0,240,60) # in sec
