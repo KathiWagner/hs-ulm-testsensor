@@ -32,9 +32,5 @@ RUN cd ~ \
 && git clone https://github.com/KathiWagner/hs-ulm-testsensor.git
 
 CMD (cd /root/lmic_pi/examples/grab-and-send && nohup ./grab-and-send 2>&1 > grab-and-send.log) & \
-<<<<<<< HEAD
-(cd /root/hs-ulm-testsensor && python3 measurement_program.py 2>&1 > grab-and-send.log) & \
-=======
 (cd /root/hs-ulm-testsensor && nohup python3 measurement_program.py 2>&1 > grab-and-send.log) & \
->>>>>>> 9bfe4e7c22b3c0f8fb83a0f63b7d4d1a2b70b9d8
 /bin/bash
