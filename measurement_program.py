@@ -3,7 +3,7 @@
 import random
 import time
 
-time_sec = range(0,10000,60) # in sec
+time_sec = range(0,100000,60) # in sec
 for x in range(len(time_sec)):
     data = open('/root/lmic_pi/examples/grab-and-send/measurement.txt', "w")
     a = random.randint(1,201)
