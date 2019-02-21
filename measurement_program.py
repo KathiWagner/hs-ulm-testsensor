@@ -3,10 +3,7 @@
 import random
 import time
 
-data = open('/root/lmic_pi/examples/grab-and-send/measurement.txt', "w")
-people = []
-people_hex =[]
-time_sec= [0,60,120,180,240, 300, 360]#range(0,240,60) # in sec
+time_sec = range(0,10000000,60) # in sec
 for x in range(len(time_sec)):
     data = open('/root/lmic_pi/examples/grab-and-send/measurement.txt', "w")
     #a = random.randint(1,201)
